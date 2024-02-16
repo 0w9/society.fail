@@ -39,7 +39,8 @@ class GenerateUserJob < ApplicationJob
       name: response_content["full_fictious_name"],
       location: response_content["location"],
       bio: response_content["bio"],
-      joined_at: Time.current
+      joined_at: Time.current,
+      approved: true
     )
   end
 end
